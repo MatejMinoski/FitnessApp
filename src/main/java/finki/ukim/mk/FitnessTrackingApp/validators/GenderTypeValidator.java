@@ -12,6 +12,8 @@ import java.lang.annotation.*;
 @Constraint(validatedBy = GenderTypeValidatorImpl.class)
 public @interface GenderTypeValidator {
   String message() default "Invalid examination status";
+
   Class<?>[] groups() default {};
+
   Class<? extends Payload>[] payload() default {};
 }
