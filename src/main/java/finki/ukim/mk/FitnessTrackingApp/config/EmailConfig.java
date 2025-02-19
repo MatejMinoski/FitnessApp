@@ -14,7 +14,7 @@ public class EmailConfig {
   private String host;
   @Value("${spring.mail.port}")
   private int port;
-
+//Test
   @Bean
   public JavaMailSender getJavaMailSender() {
     JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
